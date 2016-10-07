@@ -27,7 +27,7 @@
     BOOL dragEnabled = (BOOL)[command.arguments[6] boolValue];
     BOOL toBack = (BOOL)[command.arguments[7] boolValue];
     // Create the session manager
-    self.sessionManager = [[CameraSessionManager alloc] init];
+    self.sessionManager = [[LLCameraSessionManager alloc] init];
 
     //render controller setup
     self.cameraRenderController = [[LLCameraRenderController alloc] init];
