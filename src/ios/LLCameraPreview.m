@@ -3,9 +3,9 @@
 #import <Cordova/CDVPlugin.h>
 #import <Cordova/CDVInvokedUrlCommand.h>
 
-#import "CameraPreview.h"
+#import "LLCameraPreview.h"
 
-@implementation CameraPreview
+@implementation LLCameraPreview
 
 - (void) startCamera:(CDVInvokedUrlCommand*)command {
 
@@ -30,7 +30,7 @@
     self.sessionManager = [[CameraSessionManager alloc] init];
 
     //render controller setup
-    self.cameraRenderController = [[CameraRenderController alloc] init];
+    self.cameraRenderController = [[LLCameraRenderController alloc] init];
     self.cameraRenderController.dragEnabled = dragEnabled;
     self.cameraRenderController.tapToTakePicture = tapToTakePicture;
     self.cameraRenderController.sessionManager = self.sessionManager;

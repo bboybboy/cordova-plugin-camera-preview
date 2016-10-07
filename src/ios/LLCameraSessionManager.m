@@ -1,8 +1,8 @@
-#include "CameraSessionManager.h"
+#include "LLCameraSessionManager.h"
 
-@implementation CameraSessionManager
+@implementation LLCameraSessionManager
 
-- (CameraSessionManager *)init
+- (LLCameraSessionManager *)init
 {
   if (self = [super init]) {
     // Create the AVCaptureSession

@@ -1,15 +1,15 @@
-#import "CameraRenderController.h"
+#import "LLCameraRenderController.h"
 #import <CoreVideo/CVOpenGLESTextureCache.h>
 #import <GLKit/GLKit.h>
 #import <OpenGLES/ES2/glext.h>
 
-@implementation CameraRenderController
+@implementation LLCameraRenderController
 @synthesize context = _context;
 @synthesize delegate;
 
 
 
-- (CameraRenderController *)init {
+- (LLCameraRenderController *)init {
   if (self = [super init]) {
     self.renderLock = [[NSLock alloc] init];
   }

@@ -1,9 +1,9 @@
 #import <CoreImage/CoreImage.h>
 #import <AVFoundation/AVFoundation.h>
 
-@interface CameraSessionManager : NSObject
+@interface LLCameraSessionManager : NSObject
 
-- (CameraSessionManager *)init;
+- (LLCameraSessionManager *)init;
 - (void) setupSession:(NSString *)defaultCamera;
 - (void) switchCamera;
 - (void) setFlashMode:(NSInteger)flashMode;

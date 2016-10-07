@@ -7,20 +7,20 @@
 #import <CoreImage/CoreImage.h>
 #import <ImageIO/ImageIO.h>
 
-#import "CameraSessionManager.h"
+#import "LLCameraSessionManager.h"
 
 @protocol TakePictureDelegate
 - (void) invokeTakePicture;
 @end;
 
-@interface CameraRenderController : UIViewController <AVCaptureVideoDataOutputSampleBufferDelegate> {
+@interface LLCameraRenderController : UIViewController <AVCaptureVideoDataOutputSampleBufferDelegate> {
   GLuint _renderBuffer;
   CVOpenGLESTextureCacheRef _videoTextureCache;
   CVOpenGLESTextureRef _lumaTexture;
 }
 
 @property (nonatomic) GLKView *view;
-@property (nonatomic) CameraSessionManager *sessionManager;
+@property (nonatomic) LLCameraSessionManager *sessionManager;
 @property (nonatomic) CIContext *ciContext;
 @property (nonatomic) CIImage *latestFrame;
 @property (nonatomic) EAGLContext *context;
