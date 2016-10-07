@@ -18,7 +18,7 @@ import org.apache.cordova.PluginResult;
 import org.json.JSONArray;
 import org.json.JSONException;
 
-public class CameraPreview extends CordovaPlugin implements CameraActivity.CameraPreviewListener {
+public class LLCameraPreview extends CordovaPlugin implements LLCameraActivity.CameraPreviewListener {
 
   private final String TAG = "CameraPreview";
   private final String setOnPictureTakenHandlerAction = "setOnPictureTakenHandler";
@@ -37,7 +37,7 @@ public class CameraPreview extends CordovaPlugin implements CameraActivity.Camer
   private CallbackContext execCallback;
   private JSONArray execArgs;
 
-  private CameraActivity fragment;
+  private LLCameraActivity fragment;
   private CallbackContext takePictureCallbackContext;
   private FrameLayout containerView;
   public CameraPreview(){
@@ -89,7 +89,7 @@ public class CameraPreview extends CordovaPlugin implements CameraActivity.Camer
     if(fragment != null){
       return false;
     }
-    fragment = new CameraActivity();
+    fragment = new LLCameraActivity();
     fragment.setEventListener(this);
 
     cordova.getActivity().runOnUiThread(new Runnable() {

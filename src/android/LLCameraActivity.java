@@ -42,7 +42,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
-public class CameraActivity extends Fragment {
+public class LLCameraActivity extends Fragment {
 
   public interface CameraPreviewListener {
     public void onPictureTaken(String originalPicturePath);
